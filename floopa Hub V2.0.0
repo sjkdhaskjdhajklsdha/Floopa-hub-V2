@@ -1,0 +1,169 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local bar2 = Instance.new("Frame")
+local name = Instance.new("TextLabel")
+local scripts = Instance.new("TextButton")
+local hubs = Instance.new("TextButton")
+local credits = Instance.new("TextLabel")
+local scriptsTab = Instance.new("Frame")
+local close = Instance.new("TextButton")
+local infiniteyield = Instance.new("TextButton")
+local hubsTab = Instance.new("Frame")
+local poison = Instance.new("TextButton")
+local close_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+main.Position = UDim2.new(0, 129, 0, 304)
+main.Size = UDim2.new(0, 371, 0, 195)
+main.Active = true
+main.Draggable = true
+
+bar2.Name = "bar 2"
+bar2.Parent = main
+bar2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+bar2.Size = UDim2.new(0, 371, 0, 25)
+
+name.Name = "name"
+name.Parent = main
+name.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+name.BorderColor3 = Color3.fromRGB(30, 30, 30)
+name.Size = UDim2.new(0, 117, 0, 25)
+name.Font = Enum.Font.SourceSans
+name.Text = "Floopa Hub V2"
+name.TextColor3 = Color3.fromRGB(255, 85, 0)
+name.TextSize = 14.000
+
+scripts.Name = "scripts"
+scripts.Parent = main
+scripts.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+scripts.Position = UDim2.new(0, 9, 0, 34)
+scripts.Size = UDim2.new(0, 108, 0, 27)
+scripts.Font = Enum.Font.SourceSans
+scripts.Text = "Scripts < >"
+scripts.TextColor3 = Color3.fromRGB(255, 85, 0)
+scripts.TextSize = 20.000
+
+hubs.Name = "hubs"
+hubs.Parent = main
+hubs.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+hubs.Position = UDim2.new(0, 9, 0, 74)
+hubs.Size = UDim2.new(0, 108, 0, 27)
+hubs.Font = Enum.Font.SourceSans
+hubs.Text = "Other Hubs"
+hubs.TextColor3 = Color3.fromRGB(255, 85, 0)
+hubs.TextSize = 20.000
+
+credits.Name = "credits"
+credits.Parent = main
+credits.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+credits.BorderColor3 = Color3.fromRGB(60, 60, 60)
+credits.Position = UDim2.new(0, 28, 0, 185)
+credits.Size = UDim2.new(0, 101, 0, 10)
+credits.Font = Enum.Font.SourceSans
+credits.Text = "Made by not miles friend#5080"
+credits.TextColor3 = Color3.fromRGB(255, 85, 0)
+credits.TextSize = 14.000
+
+scriptsTab.Name = "scriptsTab"
+scriptsTab.Parent = main
+scriptsTab.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+scriptsTab.Position = UDim2.new(0, 0, 0, 25)
+scriptsTab.Size = UDim2.new(0, 371, 0, 170)
+scriptsTab.Visible = false
+
+close.Name = "close"
+close.Parent = scriptsTab
+close.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+close.Position = UDim2.new(0, 352, 0, 0)
+close.Size = UDim2.new(0, 19, 0, 23)
+close.Font = Enum.Font.SourceSans
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(0, 0, 0)
+close.TextSize = 14.000
+
+infiniteyield.Name = "infinite yield"
+infiniteyield.Parent = scriptsTab
+infiniteyield.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+infiniteyield.Position = UDim2.new(0, 9, 0, 16)
+infiniteyield.Size = UDim2.new(0, 80, 0, 20)
+infiniteyield.Font = Enum.Font.SourceSans
+infiniteyield.Text = "infinite yield"
+infiniteyield.TextColor3 = Color3.fromRGB(255, 85, 0)
+infiniteyield.TextSize = 14.000
+infiniteyield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end)
+
+hubsTab.Name = "hubsTab"
+hubsTab.Parent = main
+hubsTab.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+hubsTab.Position = UDim2.new(0, 0, 0, 25)
+hubsTab.Size = UDim2.new(0, 371, 0, 170)
+hubsTab.Visible = false
+
+poison.Name = "poison"
+poison.Parent = hubsTab
+poison.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+poison.Position = UDim2.new(0, 9, 0, 16)
+poison.Size = UDim2.new(0, 80, 0, 20)
+poison.Font = Enum.Font.SourceSans
+poison.Text = "Poison X"
+poison.TextColor3 = Color3.fromRGB(255, 85, 0)
+poison.TextSize = 14.000
+poison.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Ne0n2680/uraniumgui/main/poisonx"))()
+end)
+
+close_2.Name = "close"
+close_2.Parent = hubsTab
+close_2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+close_2.Position = UDim2.new(0, 352, 0, 0)
+close_2.Size = UDim2.new(0, 19, 0, 23)
+close_2.Font = Enum.Font.SourceSans
+close_2.Text = "X"
+close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+close_2.TextSize = 14.000
+
+-- Scripts:
+
+local function MAURRH_fake_script() -- scripts.LocalScript 
+	local script = Instance.new('LocalScript', scripts)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.scriptsTab.Visible = true
+	script.Parent.Parent.hubsTab.Visible = false
+	end)
+end
+coroutine.wrap(MAURRH_fake_script)()
+local function YNLL_fake_script() -- hubs.LocalScript 
+	local script = Instance.new('LocalScript', hubs)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.scriptsTab.Visible = false
+		script.Parent.Parent.hubsTab.Visible = true
+	end)
+	
+end
+coroutine.wrap(YNLL_fake_script)()
+local function QHYJIOM_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false 
+	end)
+end
+coroutine.wrap(QHYJIOM_fake_script)()
+local function GNVR_fake_script() -- close_2.LocalScript 
+	local script = Instance.new('LocalScript', close_2)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false 
+	end)
+end
+coroutine.wrap(GNVR_fake_script)()
